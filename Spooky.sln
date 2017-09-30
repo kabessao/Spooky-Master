@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spooky", "Spooky\Spooky.csproj", "{CFB28DAA-BEED-4FAD-AE29-2B58207A95A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpookyWpf", "SpookyWpf\SpookyWpf.csproj", "{5FF57704-C6EA-401F-906B-60A265346B03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB28DAA-BEED-4FAD-AE29-2B58207A95A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB28DAA-BEED-4FAD-AE29-2B58207A95A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB28DAA-BEED-4FAD-AE29-2B58207A95A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB28DAA-BEED-4FAD-AE29-2B58207A95A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF57704-C6EA-401F-906B-60A265346B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF57704-C6EA-401F-906B-60A265346B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF57704-C6EA-401F-906B-60A265346B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF57704-C6EA-401F-906B-60A265346B03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5378D17D-9534-40BA-AC69-184ABD25B95F}
+	EndGlobalSection
+EndGlobal

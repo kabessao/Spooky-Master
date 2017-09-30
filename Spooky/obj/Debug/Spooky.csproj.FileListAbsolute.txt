@@ -1,0 +1,10 @@
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.Properties.Resources.resources
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.csproj.GenerateResource.Cache
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.csproj.CoreCompileInputs.cache
+C:\Users\Kabessao\source\repos\Spooky\Spooky\bin\Debug\Spooky.exe
+C:\Users\Kabessao\source\repos\Spooky\Spooky\bin\Debug\Spooky.pdb
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.exe
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.pdb
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.csprojResolveAssemblyReference.cache
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.JanelaPrincipal.resources
+C:\Users\Kabessao\source\repos\Spooky\Spooky\obj\Debug\Spooky.Lista.resources
