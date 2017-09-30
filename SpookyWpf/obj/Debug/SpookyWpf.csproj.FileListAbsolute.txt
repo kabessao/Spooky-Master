@@ -9,7 +9,6 @@ C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\obj\Debug\SpookyWpf.csproj.Gener
 C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\obj\Debug\SpookyWpf.csproj.CoreCompileInputs.cache
 C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\obj\Debug\SpookyWpf.exe
 C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\obj\Debug\SpookyWpf.pdb
-C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\obj\Debug\SpookyWpf.csprojResolveAssemblyReference.cache
 C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\bin\Debug\SevenZipSharp.dll
 C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\bin\Debug\WpfAnimatedGif.dll
 C:\Users\Kabessao\source\repos\Spooky\SpookyWpf\bin\Debug\WpfAnimatedGif.xml
@@ -23,3 +22,4 @@ C:\Users\Kabessao\source\repos\spooky\SpookyWpf\obj\Debug\Janelas\MainWindow.bam
 C:\Users\Kabessao\source\repos\spooky\SpookyWpf\obj\Debug\Janelas\mensagem.baml
 C:\Users\Kabessao\source\repos\spooky\SpookyWpf\obj\Debug\Janelas\App.g.cs
 C:\Users\Kabessao\source\repos\spooky\SpookyWpf\obj\Debug\Janelas\App.baml
+C:\Users\Kabessao\source\repos\spooky\SpookyWpf\obj\Debug\SpookyWpf.csprojResolveAssemblyReference.cache

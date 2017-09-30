@@ -64,18 +64,17 @@ namespace SpookyWpf
             };
             p.Start();
             p.Close();
-            p.Dispose();
         }
 
-        private void ApagarTudo(object sender, RoutedEventArgs e)
+        private void Rezetar(object sender, RoutedEventArgs e)
         {
-            if (System.Windows.MessageBox.Show("Deseja mesmo deletar todas as configuraçoes", 
+            if (System.Windows.MessageBox.Show("Deseja mesmo resetar todas as configuraçoes", 
                 "Confirmação",
                 MessageBoxButton.YesNo, 
                 MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 File.Delete(Diretorios.Diretorio + @"\*");
-                Config.CriarArquivo(Diretorios.Preferencias);
+                Config.Resetar(Diretorios.Preferencias);
             }
              
         }

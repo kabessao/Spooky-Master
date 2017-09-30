@@ -33,10 +33,10 @@
                             Grid.Column="2"
                             Click="Ok"/>
 
-                    <Button Content="Apagar tudo"
+                    <Button Content="Resetar"
                             x:Name="btnApagarTudo"
                             Visibility="Hidden"
-                            Click="ApagarTudo"
+                            Click="Rezetar"
                             Grid.Column="1"/>
                     
                     <Button Content="Explorer"

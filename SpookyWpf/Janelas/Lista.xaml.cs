@@ -59,7 +59,6 @@ namespace SpookyWpf
             List<string> lista = new List<string>();
             file.ReadToEnd().Split('\n').ToList<string>().ForEach(x => lista.Add(x.Replace('\r',' ').TrimEnd()));
             file.Close();
-            file.Dispose();
            
 
 
@@ -98,7 +97,6 @@ namespace SpookyWpf
                 var file = new StreamWriter(Diretorios.Lista);
                 file.WriteLine(lista);
                 file.Close();
-                file.Dispose();
                 var config = new Config(Diretorios.Preferencias)
                 {
                     EsconderArquivos = (bool)chkArquivos.IsChecked
