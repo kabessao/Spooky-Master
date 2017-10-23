@@ -24,7 +24,11 @@ namespace SpookyWpf
     /// </summary>
     public partial class Mensagem : Window
     {
-        
+
+        public delegate void sliderChange(double i);
+
+        static public event sliderChange OnSliderChanging;
+
             
         public Mensagem()
         {
@@ -41,6 +45,7 @@ namespace SpookyWpf
             var me = new Mensagem();
             me.btnExplorer.Visibility = mostrar;
             me.btnApagarTudo.Visibility = mostrar;
+            me.lsdSlider.Visibility = mostrar;
             me.Show();
         }
         public static void Mostrar(string mensagem, string titulo = "Mensagem")
@@ -77,6 +82,11 @@ namespace SpookyWpf
                 Config.Resetar(Diretorios.Preferencias);
             }
              
+        }
+
+        private void lsdSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            OnSliderChanging?.Invoke(e.NewValue);
         }
     }
 }

@@ -1,1 +1,7 @@
+spooky
+SevenZipSharp.dll
+SpookyWpf.exe.config
+SpookyWpf.pdb
+WpfAnimatedGif.dll
+WpfAnimatedGif.xml
 

@@ -11,7 +11,8 @@
         ResizeMode="NoResize"       
         WindowStartupLocation="CenterScreen"
         Title="Spooky" SizeToContent="Height" Width="200">
-    <StackPanel Margin="5 5">
+    <StackPanel Margin="5 5"
+                x:Name="Panel">
         <Grid Height="5">
             <Grid.Resources>
                 <Style TargetType="Button">
@@ -45,8 +46,14 @@
             <ComboBoxItem>Esconder tudo</ComboBoxItem>
         </ComboBox>
         <Button
-            Click="Confirmar"
-            Content="confirmar"/>
+            Click="Confirmar">
+            <Grid Width="178">
+               
+                <TextBlock Text="Confirmar"
+                           TextAlignment="Center"/>
+                
+            </Grid>
+        </Button>
 
         <Grid Margin="0 5 0 0 " >
             <Grid.ColumnDefinitions>
@@ -69,10 +76,10 @@
             
             Click="MostrarLista"
             
-            Content="Modificar lista"/>
+            Content="Modificar lista"
+            Margin="0 5"/>
 
-       
-
+        
 
 
 

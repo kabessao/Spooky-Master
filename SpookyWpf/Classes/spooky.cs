@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Threading;
 
 namespace Spooky
 {
@@ -43,6 +44,11 @@ namespace Spooky
 
         }
 
+        public delegate void teste(ProgressEventArgs p);
+
+
+        static public event teste OnProgressing;
+
         static public void EsconderAlguns(string[] nomes)
         {
             var cmd = new Process()
@@ -55,6 +61,9 @@ namespace Spooky
             };
 
             nomes = nomes.Where(x => !string.IsNullOrEmpty(x.TrimEnd())).Distinct().ToArray();
+            double length = 100 / nomes.Length;
+            double total = length;
+
 
             foreach (var item in nomes)
             {
@@ -62,12 +71,30 @@ namespace Spooky
                 cmd.StartInfo.Arguments = "/s /d +h " + item;
                 cmd.Start();
 
+                Progressing(total);
+
+                //Thread.Sleep(3000);
+                
+                total += length;
 
             }
             cmd.WaitForExit();
 
 
         }
+        
 
+        private static void Progressing(double length)
+        {
+            if (OnProgressing != null)
+            {
+                ProgressEventArgs p = new ProgressEventArgs
+                {
+                    Progress = length
+                };
+                OnProgressing(p);
+                
+            }
+        }
     }
 }

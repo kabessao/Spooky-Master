@@ -61,7 +61,11 @@
                     <TextBlock Grid.Column="1" 
                            Text="You're an idiot!"
                            HorizontalAlignment="Center"/>
-                    
+                    <Slider x:Name="lsdSlider" Minimum="0"
+                            Maximum="100"
+                            ValueChanged="lsdSlider_ValueChanged"
+                            IsEnabled="False"/>
+
                 </StackPanel>
 
             </Grid>

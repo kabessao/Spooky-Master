@@ -26,6 +26,12 @@ namespace SpookyWpf
         public MainWindow()
         {
             InitializeComponent();
+            Mensagem.OnSliderChanging += Mensagem_OnSliderChanging;
+        }
+
+        private void Mensagem_OnSliderChanging(double i)
+        {
+            bar.Value = i;
         }
 
         private void Confirmar(object sender, RoutedEventArgs e)
@@ -37,6 +43,7 @@ namespace SpookyWpf
 
         private void VerOpcao()
         {
+            
             switch (cboxOpcao.SelectedIndex)
             {
                 case (int)Opcao.MostrarTudo:
@@ -44,13 +51,37 @@ namespace SpookyWpf
                     break;
                 case (int)Opcao.ApenasNaLista:
 
-                    Spooky.Spooky.EsconderAlguns(GetArquivos);
+                    Teste();
                     break;
                 case (int)Opcao.EsconderTudo:
                     Spooky.Spooky.EsconderTudo();
                     break;
             }
         }
+
+        
+
+        private void Teste()
+        {
+            Spooky.Spooky.OnProgressing += Spooky_OnProgressing;
+            Spooky.Spooky.OnProgressing += Spooky_OnProgressing1;
+
+            Spooky.Spooky.EsconderAlguns(GetArquivos);
+            
+            
+        }
+
+        private void Spooky_OnProgressing1(ProgressEventArgs p)
+        {
+            
+        }
+
+        private void Spooky_OnProgressing(ProgressEventArgs p)
+        {
+            bar.Value = p.Progress;
+            
+        }
+
         private string[] GetArquivos { get => new StreamReader(Diretorios.Lista).ReadToEnd().Replace('\r', ' ').Trim().Split('\n'); }
 
         enum Opcao
